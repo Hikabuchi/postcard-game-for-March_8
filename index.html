@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Цветочная ловушка</title>
+</head>
+<body>
+  <header class="header">
+    <div class="castom-banner">
+      <h1 class="h1-content">С 8 марта</h1>
+    </div>
+     <p class="info">8 Марта - международный женский день борьбы за права женщин, день женской солидарности и эмансипации</p>
+  </header>
+  <!--game-->
+  <main class="main">
+    <div class="container-game">
+      <h2 class="h2-content">Игра цветочная охота: Собери свою корзинку цветов</h2>
+      <p class="postcard">Пусть каждым цветком в корзине ваши таланты расцветут, как самые яркие цветы.</p>
+      <div class="study">
+        Управление в игреосуществляется клавишами
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+        </svg>
+      </div>
+      <div id="number-of-successful" class="game-parameters">Счет: 0</div>
+      <div id="number-of-unsuccessful" class="game-parameters">Пропущено: 0</div>
+      <div id="gameArea">
+        <img id="basket" src="./img/basket.png">
+      </div>
+      <div id="container-but"></div>
+    </div> 
+  </main>
+  <div class="mobile-version">
+    <img src="./img/img.jpg" alt="Цветок">
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

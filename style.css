@@ -1,0 +1,146 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+:root{
+  --color1: #ffffff;
+  --color2:#fbd7d1;
+  --color3:#0c0c0c;
+  --color4: #58665d;
+  --color5:#9e1616;
+  --color6:#ecd1cc;
+}
+
+@font-face {
+  font-family: 'Antarctic';
+  src: url(./assets/font/Antarctic/Antarctic.otf);
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: url(./assets/font/Open_Sans/OpenSans-Italic-VariableFont_wdth\,wght.ttf);
+}
+
+.header{
+  padding: 20px;
+  background-color: var(--color3);
+}
+
+.castom-banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  
+}
+
+.h1-content{
+  font-family: 'Antarctic',serif;
+  color: var(--color2);
+  font-size: 150px;
+}
+
+.info{
+  text-align: center;
+  font-family: 'Open-Sans',sans-serif;
+  color: var(--color2);
+  font-size: 30px;
+  margin: 40px;
+}
+
+.container-game{
+  padding: 20px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  font-family: 'Open-Sans',sans-serif;
+}
+
+.h2-content{
+  font-size: 40px;
+  margin: 20px;
+}
+
+.postcard{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.study{
+  color: var(--color4);
+}
+
+.game-parameters{
+  padding: 5px 10px;
+}
+
+#gameArea {
+  margin-left: 25%;
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background-color: var(--color1);
+}
+
+#basket {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+.flower {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.new-game{
+  background-color: var(--color2);
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 5px;
+  width: 150px;
+margin: auto;
+}
+
+.new-game:hover{
+  background-color: var(--color6);
+}
+
+.mobile-version{
+  display: none;
+}
+
+@media (max-width: 724px) {
+  .main{
+    display: none;
+  }
+
+  .header{
+    padding: 10px;
+  }
+
+  .h1-content{
+    font-size: 60px;
+  }
+
+  .info{
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .mobile-version{
+    display: block;
+  }
+  
+}
